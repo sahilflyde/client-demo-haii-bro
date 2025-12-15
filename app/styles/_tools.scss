@@ -1,0 +1,123 @@
+.tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--sp-40);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--sp-40);
+
+    &:nth-child(2) {
+      justify-content: center;
+    }
+  }
+
+  .tool-item {
+    background-color: var(--color-blue-300);
+    border-radius: var(--radius-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;         // ✅ fill grid cell
+    aspect-ratio: 16/9;  // ✅ maintain proportion instead of fixed height
+    
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .tool-image {
+      width: 184px;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .no-tools {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  @media (max-width: 1023px) and (min-width: 650px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--sp-32);
+    width: 100%;
+    margin: 0 auto;
+
+    .column {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--sp-32);
+    }
+
+    .tool-item {
+      width: 100%;
+      height: 200px;
+      max-width: 100%;
+    }
+
+    .tool-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+
+.mobile-tools-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--sp-24);
+  width: 100%;
+  margin: 0 auto;
+
+  .tool-item {
+    width: 167px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #f7f8ff;
+
+    .tool-image {
+      width: 82px;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 675px) {
+    .tool-item {
+      width: 100%;
+      max-width: 120px;
+      height: 97px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      background-color: #f7f8ff;
+
+      .tool-image {
+        width: 41px;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}

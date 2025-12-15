@@ -1,0 +1,417 @@
+.h1 {
+  font-size: 70px;
+  line-height: 130%;
+  font-weight: 600;
+  color: var(--color-black-500);
+  font-family: var(--font-recursive);
+}
+
+@media (max-width: 1440px) {
+  .h1 {
+    font-size: 48px;
+    line-height: 130%;
+    font-weight: 600;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+@media (max-width: 1024px) {
+  .h1 {
+    font-size: 40px;
+    line-height: 130%;
+    font-weight: 600;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 36px;
+    line-height: 130%;
+    font-weight: 600;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+.h2 {
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 600;
+  color: var(--color-black-500);
+  font-family: var(--font-abeezee);
+}
+
+@media (max-width: 1440px) {
+  .h2 {
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 600;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+@media (max-width: 1024px) {
+  .h2 {
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 600;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+@media (max-width: 768px) {
+  .h2 {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 600;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+.h3 {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 600;
+  color: var(--color-black-500);
+  font-family: var(--font-abeezee);
+}
+
+@media (max-width: 1440px) {
+  .h3 {
+    font-size: 22px;
+    line-height: 120%;
+    font-weight: 600;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+@media (max-width: 1024px) {
+  .h3 {
+    font-size: 22px;
+    line-height: 120%;
+    font-weight: 600;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+@media (max-width: 768px) {
+  .h3 {
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 600;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+.h4 {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 500;
+  color: var(--color-black-500);
+  font-family: var(--font-abeezee);
+}
+
+@media (max-width: 1440px) {
+  .h4 {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 500;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+@media (max-width: 1024px) {
+  .h4 {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 500;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+@media (max-width: 768px) {
+  .h4 {
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 500;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+.h5 {
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: 500;
+  color: var(--color-black-500);
+  font-family: var(--font-jakarta);
+}
+
+@media (max-width: 1440px) {
+  .h5 {
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: 500;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+@media (max-width: 1024px) {
+  .h5 {
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 500;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+@media (max-width: 768px) {
+  .h5 {
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 500;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+.h6 {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
+  color: var(--color-black-500);
+  font-family: var(--font-jakarta);
+}
+
+@media (max-width: 1440px) {
+  .h6 {
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 600;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+@media (max-width: 1024px) {
+  .h6 {
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 600;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+@media (max-width: 768px) {
+  .h6 {
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 600;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+.body-1 {
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 400;
+  color: var(--color-black-500);
+  font-family: var(--font-abeezee);
+}
+
+@media (max-width: 1440px) {
+  .body-1 {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 400;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+@media (max-width: 1024px) {
+  .body-1 {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 400;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+@media (max-width: 768px) {
+  .body-1 {
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 400;
+    color: var(--color-black-500);
+    font-family: var(--font-abeezee);
+  }
+}
+
+.body-2 {
+  font-size: 24px;
+  line-height: 160%;
+  font-weight: 400;
+  color: var(--color-black-500);
+  font-family: var(--font-jakarta);
+}
+
+@media (max-width: 1440px) {
+  .body-2 {
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 400;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+@media (max-width: 1024px) {
+  .body-2 {
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 400;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+@media (max-width: 768px) {
+  .body-2 {
+    font-size: 12px;
+    line-height: 160%;
+    font-weight: 400;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+.body-3 {
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: 400;
+  color: var(--color-black-500);
+  font-family: var(--font-jakarta);
+}
+
+@media (max-width: 1440px) {
+  .body-3 {
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 400;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+@media (max-width: 1024px) {
+  .body-3 {
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 400;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+@media (max-width: 768px) {
+  .body-3 {
+    font-size: 12px;
+    line-height: 160%;
+    font-weight: 400;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+.body-4 {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--color-black-400);
+  font-family: var(--font-jakarta);
+}
+
+@media (max-width: 1440px) {
+  .body-4 {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--color-black-400);
+    font-family: var(--font-jakarta);
+  }
+}
+
+@media (max-width: 1024px) {
+  .body-4 {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--color-black-400);
+    font-family: var(--font-jakarta);
+  }
+}
+
+@media (max-width: 768px) {
+  .body-4 {
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--color-black-400);
+    font-family: var(--font-jakarta);
+  }
+}
+
+.body-5 {
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--color-black-500);
+  font-family: var(--font-jakarta);
+}
+
+@media (max-width: 1440px) {
+  .body-5 {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+@media (max-width: 1024px) {
+  .body-5 {
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}
+
+@media (max-width: 768px) {
+  .body-5 {
+    font-size: 12px;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--color-black-500);
+    font-family: var(--font-jakarta);
+  }
+}

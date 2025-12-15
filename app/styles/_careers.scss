@@ -1,0 +1,27 @@
+.careers-sub-heading{
+    margin-bottom: var(--sp-16);
+}
+.job-cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-40);
+}
+.careers-title{
+    margin-bottom: var(--sp-56);
+}
+
+.why-work{
+    background-color: var(--color-blue-300);
+}
+
+.why-hire-cards-container{
+    display: flex;
+    gap: var(--sp-40);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.why-hire-card{
+    // max-width: 420px;
+    // background-color: var(--color-white);
+}

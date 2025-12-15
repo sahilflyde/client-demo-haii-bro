@@ -1,0 +1,44 @@
+.imageCard {
+  display: flex;
+  flex-direction: column;
+  // gap: var(--sp-24);
+  border-radius: var(--radius-md);
+  background-color: var(--color-white);
+  border: 0.67px solid var(--color-black-100);
+  max-width: 429px;
+}
+
+
+.cardImg {
+  width: 100%;
+}
+
+.cardHead {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-16);
+  padding: var(--sp-24) var(--sp-32);
+}
+
+@media (max-width: 1100px) and (min-width: 300px) {
+  .imageCard {
+    width: 420px;
+  }
+}
+
+@media (max-width: 500px) {
+  .imageCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .imageCard {
+    // padding: var(--sp-24);
+    width: 100%;
+  }
+  .cardHead {
+    // gap: var(--sp-8);
+    padding: var(--sp-24);
+  }
+}

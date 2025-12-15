@@ -1,0 +1,163 @@
+/* Overall root */
+.app-root {
+  display: flex;
+  min-height: 100vh;
+  background: #0f0f10;
+  color: #fff;
+  
+}
+
+/* MAIN AREA */
+.main-area {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 71px;
+}
+
+/* TOP BAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title-block {
+ display:flex;
+ flex-direction: row;
+ gap: var(--sp-60);
+}
+
+.slug {
+ 
+  color: #B6B6B6;
+  
+}
+
+
+/* CONTENT GRID */
+.content-grid {
+  display: flex;
+  gap: 36px;
+  width: 100%;
+}
+
+
+.preview-column {
+  width: 366px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.preview-card {
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: var(--sp-6);
+  overflow: hidden; 
+}
+
+
+
+
+/* EDITOR COLUMN */
+.editor-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 66px;
+  padding-left: 36px;
+  border-left: 2px solid #8B8B8B63; 
+}
+
+.panel-header {
+  
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+
+.panel-sub {
+  color: rgba(255,255,255,0.45);
+  font-size: 13px;
+}
+
+/* Rows inside editor */
+.panel-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(182, 182, 182, 1);
+}
+
+.row.no-border {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Field */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+  
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(0,0,0,0.35);
+  color: white;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* ACTIONS */
+.editor-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: transparent;
+  color: #ff4b4b;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.save-btn {
+  background: linear-gradient(90deg, #7b61ff, #6a54e6);
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  .left-sidebar {
+    display: none; /* hide sidebar on small screens */
+  }
+  .main-area {
+    padding: 18px;
+  }
+}

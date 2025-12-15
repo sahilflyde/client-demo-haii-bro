@@ -1,0 +1,138 @@
+:root {
+  --color-lime: #ccef55;
+  --color-blue-500: #afb7ff;
+  --color-blue-400: #c7cdff;
+  --color-blue-300: #f7f8ff;
+  --color-black-300: #aaaaaa;
+  --color-black-400: #636363; 
+  --color-black-500: #222222;
+  --color-white: #ffffff; 
+  --color-light-white: #d9d9d9;
+  --color-black-100: #E5E5E5;
+  --color-white-200: #E3E0E0;
+  --color-gray-100:#1D1D1D;
+  --color-gradient-background: linear-gradient(90deg, #5B8CFF 0%, #A15BFF 100%);
+  --color-gray-200:"#464646";
+
+
+
+  --sp-2: 2px;
+  --sp-4: 4px;
+  --sp-6: 6px;
+  --sp-7: 7px;
+  --sp-8: 8px;
+  --sp-10: 10px; 
+  --sp-11: 11px; 
+  --sp-12: 12px;
+  --sp-14: 14px;
+  --sp-16: 16px;
+  --sp-18: 18px;
+  --sp-19: 19px;
+  --sp-20: 20px;
+  --sp-24: 24px;
+  --sp-25: 25px;
+  --sp-29: 29px;
+  --sp-32: 32px;
+  --sp-40: 40px;
+  --sp-41: 41px;
+  --sp-44: 44px;
+  --sp-46: 46px;
+  --sp-48: 48px;
+  --sp-50: 50px;
+  --sp-56: 56px;
+  --sp-60: 60px;
+  --sp-80: 80px;
+  --sp-83: 83px;
+  --sp-96: 96px;
+  --sp-128: 128px;
+  --sp-136: 136px;
+  --sp-176: 176px;
+
+  --radius-xxs:12.47px;
+  --radius-xs: 16px;
+  --radius-md: 24px;
+  --radius-lg: 32px;
+  --radius-xl: 48px;
+
+  --layout-max-width: 1520px;
+}
+
+/* ✅ Generic Color Rect */
+.color-rect {
+  width: 200px;
+  height: 110px;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--sp-8);
+}
+
+/* ✅ Section style using spacing variables */
+.palette-section {
+  margin-bottom: var(--sp-56);
+
+  .palette-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: var(--sp-16);
+  }
+
+  .palette-desc {
+    color: var(--color-black-400);
+    margin-bottom: var(--sp-24);
+    max-width: 500px;
+  }
+
+  .palette-row {
+    display: flex;
+    gap: var(--sp-24);
+    flex-wrap: wrap;
+    padding-bottom: var(--sp-16);
+  }
+
+  .palette-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+
+    .label {
+      margin-top: var(--sp-8);
+      font-weight: 500;
+      color: var(--color-black-500);
+      margin-bottom: var(--sp-4);
+    }
+
+    .hex {
+      font-size: 14px;
+      color: var(--color-black-400);
+    }
+  }
+}
+
+/* ✅ Colors */
+.bg-black-500 {
+  background: var(--color-black-500);
+}
+.bg-black-400 {
+  background: var(--color-black-400);
+}
+.bg-black-300 {
+  background: var(--color-black-300);
+}
+.bg-white-500 {
+  background: var(--color-white);
+  border: 1px solid #ddd;
+}
+
+.bg-lime {
+  background: var(--color-lime);
+}
+.bg-blue-500 {
+  background: var(--color-blue-500);
+}
+.bg-blue-400 {
+  background: var(--color-blue-400);
+}
+.bg-blue-300 {
+  background: var(--color-blue-300);
+  border: 1px solid #eee;
+}

@@ -1,0 +1,16 @@
+.auto-input {
+  width: 236px;
+  height: 41px;
+  padding: 11px 21px 11px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  background: black;
+  border-radius: 6px;
+  border: none;
+  white-space: nowrap; 
+ 
+}
+
+.auto-input::placeholder {
+  color: #b6b6b6;
+}

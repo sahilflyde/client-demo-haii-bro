@@ -1,0 +1,38 @@
+.typography-select {
+  background: #000;
+  color: #fff;
+  border-radius: 6px;
+  padding: 11px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  appearance: none; 
+  position: relative;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+}
+
+/* Custom arrow using pseudo-element */
+.typography-select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.typography-select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 8px; /* 8px border se door */
+  width: 9px; /* image width */
+  height: 19px; /* image height */
+  background-image: url("https://ik.imagekit.io/a9uxeuyhx/First%20Name.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+

@@ -1,0 +1,328 @@
+.btnAdmin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+  line-height: 1;
+  user-select: none; 
+  border-radius: var(--radius-lg);
+  width: auto;
+  max-width: fit-content;
+
+
+  
+  /* Sizes */
+  &--xs {
+    padding: var(--sp-6) var(--sp-19);
+    font-size: 13px;
+    gap: var(--sp-6);
+    border-radius: var(--radius-xxs);
+  }
+  
+  &--sm {
+    padding: var(--sp-8) var(--sp-16);
+    font-size: 14px;
+    gap: var(--sp-8);
+    border-radius: var(--radius-xs);
+  }
+
+  &--smTwo {
+    padding: var(--sp-8) var(--sp-24);
+    font-size: 20px;
+    gap: var(--sp-16);
+    border-radius: var(--radius-xl);
+  }
+
+  &--md {
+    padding: var(--sp-10) var(--sp-18);
+    font-size: 15px;
+    gap: var(--sp-10);
+  }
+
+  &--lg {
+    padding: var(--sp-16) var(--sp-32);
+    font-size: 18px;
+    gap: var(--sp-16);
+    border-radius: var(--radius-lg);
+  }
+
+  &--xl {
+    padding: var(--sp-16) var(--sp-24);
+    font-size: 20px;
+    gap: var(--sp-16);
+    border-radius: var(--radius-xl);
+  }
+
+  /* Variants */
+
+  /* OUTLINE VARIANT — SOLID */
+  &--white-outline {
+    background: var(--color-gray-100);
+    border: 1px solid #464646;
+    color: var(--color-white);
+    transition: 0.2s ease-in-out;
+
+   
+  }
+
+  /* OUTLINE VARIANT — GRADIENT BORDER */
+  &--outline-gradient {
+    border: 3px solid transparent;
+    border-radius: var(--radius-lg);
+    color: var(--color-white);
+  
+    background:
+      linear-gradient(var(--color-gray-100), var(--color-gray-100)) padding-box,
+      linear-gradient(90deg, #5B8CFF 0%, #A15BFF 100%) border-box;
+  
+    transition: 0.25s ease-in-out;
+  }
+  
+
+  &--primary {
+    background: var(--color-gradient-background);
+    color: var(--color-white) ;
+  
+
+  }
+
+  &--primary-two {
+    background: var(--color-lime);
+    color: var(--color-black-500);
+    
+  }
+
+  &--primary-outline {
+    background: transparent;
+    border: 2px solid var(--color-lime);
+    &:hover {
+      background: var(--color-lime);
+    }
+  }
+
+  &--black-solid {
+    background: black;
+    color: var(--color-white);
+    border: var(--color-white);
+   
+  
+  }
+  
+
+  &--black-outline {
+    background: transparent;
+    border: 3px solid var(--color-gradient-background);
+    transition: 0.2s ease-in-out;
+
+   
+  }
+  /* TEXT RED VARIANT */
+  &--text-red {
+    background: transparent;
+    border: none;
+    color: #FF0000;
+    padding: 0; 
+    font-size: inherit;
+    font-weight: 400;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+
+    .btnAdmin-icon-custom {
+      font-size: 16px;
+      width: auto;
+      height: auto;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &--gradient-text {
+    background: linear-gradient(90deg, #5B8CFF 0%, #A15BFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0; /* optional – text button feel */
+  }
+  
+  &--white {
+    background: var(--color-white);
+    border: 0.5px solid transparent;
+    transition: 0.2s ease-in-out;
+
+    .btnAdmin-icon-white {
+      background: var(--color-lime);
+      border: 0.5px solid var(--color-lime);
+      transition: background-color 0.2s ease-in-out;
+
+      &:hover {
+        // background: darken(var(--color-lime), 8%);
+      }
+    }
+
+    &:hover {
+      border: 0.5px solid var(--color-black-500);
+
+      .btnAdmin-icon-white {
+        // background: darken(var(--color-lime), 5%);
+        border: 0.5px solid var(--color-black-500);
+      }
+    }
+  }
+  
+  
+  /* Icon */
+  .btnAdmin-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 48px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--color-black-500);
+    flex-shrink: 0;
+    border: 0.5px solid transparent;
+    transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    
+  }
+
+  &:hover {
+    .btnAdmin-icon {
+      border: 0.5px solid var(--color-black-500);
+    }
+  }
+
+  .btnAdmin-icon-white {
+    width: 40px;
+    height: 40px;
+    border-radius: 48px;
+    background: var(--color-lime);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--color-black-500);
+    flex-shrink: 0;
+    border: 0.5px solid transparent;
+    transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  @media (max-width: 600px) {
+    &--primary,
+    &--white,
+    &--black-outline {
+      padding: var(--sp-10) var(--sp-24);
+      font-size: 16px;
+      gap: var(--sp-16);
+      border-radius: var(--radius-xl);
+    }
+
+    .arrow-img {
+      width: 8px;
+      height: 6px;
+    }
+
+    .btnAdmin-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 48px;
+      background: white;
+      font-size: 16px;
+      color: var(--color-black-500);
+    }
+
+    .btnAdmin-icon-white {
+      background: var(--color-lime);
+      width: 22px;
+      height: 22px;
+      border-radius: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: var(--color-black-500);
+    }
+  }
+
+  /* With Icon - add extra padding */
+  &--with-icon {
+    padding-right: var(--sp-8);
+  }
+
+  /* Disabled */
+  &--disabled,
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.btnAdmin--transparent {
+  background: transparent !important;
+  border: 0.5px solid var(--color-black-500) !important; /* optional if u want */
+  box-shadow: none !important;
+
+}
+/* ========== TAB BUTTON VARIANT ========== */
+
+.btnAdmin--tab {
+  background: black;
+  color: var(--color-white);
+  border: none;
+}
+
+.btnAdmin--tab.active {
+  background: var(--color-gradient-background);
+  color: var(--color-white);
+  border: 1px solid var(--color-white-200);
+}
+.btnAdmin {
+  /* Gradient Custom Variant */
+  &--gradient-custom {
+    padding: 12px 19px;
+    background: var(--color-gradient-background);
+    color: var(--color-white);
+    border-radius: 8.6px;
+    border: none;
+    
+  }
+}
+.btnAdmin--full {
+  width: 100%;
+  max-width: 100%;
+}.btnAdmin {
+  &--gradient-custom-icon {
+    padding: 12px 19px;
+    background: var(--color-gradient-background);
+    color: var(--color-white);
+    border-radius: 8.6px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.btnAdmin-icon-custom {
+  width: 23px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  flex-shrink: 0;
+}

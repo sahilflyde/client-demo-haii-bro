@@ -1,0 +1,48 @@
+.typography-counter {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 11px 14px;
+  color: #fff;
+}
+
+.counter-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  width: 18px;
+  text-align: center;
+}
+
+.counter-btn:hover:not(:disabled) {
+  opacity: 0.7;
+}
+
+.counter-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.counter-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+.counter-value {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

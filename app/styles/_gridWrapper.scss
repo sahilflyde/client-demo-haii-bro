@@ -1,0 +1,28 @@
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-16);
+}
+
+.mainSec {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-56);
+}
+
+.color-black-400 {
+  color: var(--color-black-400);
+}
+
+@media (max-width: 900px) {
+  .gridSectionAuto {
+    
+    grid-template-columns: unset !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainSec {
+    gap: var(--sp-32);
+  }
+}

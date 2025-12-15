@@ -1,0 +1,154 @@
+/* Static Navbar - Uses global spacing from Container */
+.header-container-static {
+  font-family: var(--font-jakarta);
+  position: relative;
+  // background: var(--color-white);
+  z-index: 999;
+}
+
+/* Fixed Navbar - Hidden by default, shows on scroll */
+.header-container-fixed {
+  font-family: var(--font-jakarta);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-white);
+  z-index: 1000;
+  padding: 0;
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // will-change: transform;
+  // transform: translateZ(0);
+}
+
+.header-fixed-content {
+  width: 100%;
+  max-width: var(--layout-max-width);
+}
+
+/* Hiding state - slides up */
+.header-hiding {
+  animation: slideUp 0.3s ease-out forwards;
+}
+
+/* Scrolled state with bounce effect - slides down */
+.header-scrolled {
+  animation: slideDownBounce 0.9s ease-out forwards;
+  opacity: 1;
+  pointer-events: all;
+  .header-container-static {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* Slide down with bounce animation */
+@keyframes slideDownBounce {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.nav-link-container {
+  display: flex;
+  gap: var(--sp-80);
+}
+
+.header-logo {
+  width: auto;
+  height: 37px;
+}
+
+.nav-link-color {
+  color: var(--color-black-400);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Active link styles */
+.active-link {
+  .nav-link-color {
+    color: var(--color-black-500);
+    font-weight: 600;
+  }
+
+  position: relative;
+}
+
+@media (max-width: 834px) {
+  .nav-link-container {
+    gap: var(--sp-40);
+  }
+
+  .header-fixed-content {
+    padding: var(--sp-24) var(--sp-40);
+  }
+}
+
+@media (max-width: 650px) {
+  .header-logo {
+    width: auto;
+    height: 28px;
+  }
+  .nav-link-container {
+    display: none;
+  }
+
+  .header-fixed-content {
+    padding: var(--sp-12) var(--sp-16) var(--sp-12) var(--sp-16);
+  }
+}
+
+/* STATIC NAVBAR VARIANT (route-based changes allowed) */
+.static-nav-link {
+  color: var(--color-black-400);
+  transition: all 0.2s ease-in-out;
+}
+
+.static-active .static-nav-link-white {
+  color: var(--color-lime);
+  font-weight: 600;
+}
+.static-nav-link-white {
+  color: var(--color-white);
+}
+
+.static-black-active .static-nav-link {
+  color: var(--color-black-500);
+  font-weight: 600;
+}
+
+
+/* FIXED NAVBAR — always default colors */
+.fixed-nav-link {
+  color: var(--color-black-400);
+  transition: all 0.2s ease-in-out;
+}
+
+.fixed-active .fixed-nav-link {
+  // color: var(--color-black-500);
+  color: var(--color-black-500);
+  font-weight: 600;
+}

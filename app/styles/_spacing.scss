@@ -1,0 +1,126 @@
+.primary-spacing {
+  padding: var(--sp-80) var(--sp-50);
+}
+
+.header-spacing {
+  padding: var(--sp-24) var(--sp-50);
+}
+
+.hero-spacing {
+  padding: var(--sp-80) var(--sp-50) 0 var(--sp-50);
+}
+
+.secondary-spacing {
+  padding: 128px var(--sp-50) var(--sp-80) var(--sp-50);
+}
+
+.section-spacing {
+  padding: 128px var(--sp-50) 0 var(--sp-50);
+}
+
+.auth-spacing {
+  padding: 0 0 0 var(--sp-80);
+}
+
+.normal-spacing {
+  padding: 0 0 0 0;
+}
+
+.top-spacing {
+  padding: var(--sp-80) 0 0 0;
+}
+
+.bottom-spacing {
+  padding: 0 0 var(--sp-80) 0;
+}
+
+.block-spacing {
+    padding: var(--sp-80) 0px;
+}
+.inline-spacing {
+  padding: 0px var(--sp-50);
+}
+.blog-spacing {
+    padding: var(--sp-56) var(--sp-50);
+}
+
+@media (max-width: 834px) {
+  .primary-spacing {
+    padding: var(--sp-80) var(--sp-40);
+  }
+
+  .header-spacing {
+    padding: var(--sp-24) var(--sp-40);
+  }
+
+  .hero-spacing {
+    padding: var(--sp-56) var(--sp-40) 0 var(--sp-40);
+  }
+
+  .secondary-spacing {
+    padding: 128px var(--sp-40) var(--sp-80) var(--sp-40);
+  }
+
+  .section-spacing {
+    padding: 128px var(--sp-40) 0 var(--sp-40);
+  }
+  .auth-spacing {
+    padding: 0px 0px 0px var(--sp-80);
+  }
+  .inline-spacing {
+    padding: 0px var(--sp-40);
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .primary-spacing {
+    padding: var(--sp-40) var(--sp-16);
+  }
+
+  .header-spacing {
+    padding: var(--sp-24) var(--sp-16) 0 var(--sp-16);
+  }
+
+  .hero-spacing {
+    padding: var(--sp-44) var(--sp-16) 0 var(--sp-16);
+  }
+
+  .secondary-spacing {
+    padding: var(--sp-40) var(--sp-16) var(--sp-40) var(--sp-16);
+  }
+
+  .section-spacing {
+    padding: var(--sp-40) var(--sp-16) 0 var(--sp-16);
+  }
+
+  .auth-section {
+    padding: 0;
+  }
+
+  .normal-spacing {
+    padding: 0 0 0 0;
+  }
+
+  .top-spacing {
+    padding: var(--sp-40) 0 0 0;
+  }
+
+  .bottom-spacing {
+    padding: 0 0 var(--sp-40) 0;
+  }
+
+  .block-spacing {
+    padding: var(--sp-40) 0px;
+}
+
+.blog-spacing {
+    padding: 0px var(--sp-16);
+}
+}
+
+@media (min-width: 1612px) {
+  .primary-spacing {
+    padding: var(--sp-80);
+  }
+}

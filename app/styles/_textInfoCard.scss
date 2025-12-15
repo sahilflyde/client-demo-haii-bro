@@ -1,0 +1,20 @@
+.textInfoCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: var(--sp-16);
+    padding: var(--sp-32);
+}
+
+.textInfoCardContainer{
+    border-radius: var(--radius-md);
+    background-color: var(--color-blue-300);
+}
+
+@media (max-width: 768px) {
+    .textInfoCard{
+        gap: var(--sp-12);
+        padding: var(--sp-24);
+    }
+}
